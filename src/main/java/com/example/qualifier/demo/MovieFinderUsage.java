@@ -13,7 +13,6 @@ public class MovieFinderUsage {
 	@Autowired
 	public void setMovieFinder(@Qualifier("specialMovieFinder") MovieFinder movieFinder,
 			@Qualifier("specialMovieService") MovieService movieService) {
-		System.out.println("named movie finder injected");
 		this.movieFinder = movieFinder;
 		this.movieService = movieService;
 	}
